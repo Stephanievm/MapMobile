@@ -3,4 +3,6 @@
     <string name="config_btn">Configurações do Mapa</string>
     <string name="dados_btn">Dados do Usuário</string>
     <string name="forma_btn">Forma de navegação</string>
+    <string name="salvar_btn">Salvar</string>
+    <string name="voltar_btn">Voltar</string>
 </resources>

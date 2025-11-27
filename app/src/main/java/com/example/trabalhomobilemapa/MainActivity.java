@@ -1,7 +1,6 @@
 package com.example.trabalhomobilemapa;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,16 +13,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Encontra o botão que vai para a tela de dados do usuário
+        Button dados_btn = findViewById(R.id.usuario);
 
-        Button config_btn=findViewById(R.id.configuracoes);
-        Button dados_btn=findViewById(R.id.usuario);
-
-        /*btn_location.setOnClickListener(new View.OnClickListener() {
+        dados_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(getApplicationContext(),MainActivity.class);
+                // Cria a intenção de ir da tela atual (MainActivity) para a tela 'pagina'
+                Intent i = new Intent(MainActivity.this, pagina.class);
                 startActivity(i);
             }
-        });*/
+        });
     }
 }
